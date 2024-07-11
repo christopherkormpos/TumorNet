@@ -1,0 +1,15 @@
+version: '3'
+ 
+services:
+  tumornet-webapp:
+    image: christopherkormpos/tumornet-webapp:1.1-node20.15-alpine
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    depends_on:
+      - tumornet-backend
+  tumornet-backend:
+    image: christopherkormpos/tumornet-backend:1.1-python3.9.17-slim-buster
+    ports:
+      - "5000:5000"
+    restart: unless-stopped

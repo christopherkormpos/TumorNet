@@ -1,0 +1,1 @@
+docker image build -t christopherkormpos/tumornet-backend:1.1-python3.9.17-slim-buster .

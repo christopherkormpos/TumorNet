@@ -1,0 +1,1 @@
+docker image build -t christopherkormpos/tumornet-webapp:1.1-node20.15-alpine .
