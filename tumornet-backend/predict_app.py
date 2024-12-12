@@ -13,19 +13,19 @@ CORS(app)  # Enable CORS for all routes
 # Model 1: Filtering Irrelevant (1) and Relevant Images (0)
 def get_model1():
     global model1
-    model1 = load_model('NASNet_2class_high')
+    model1 = load_model('models/NASNet_2class_high')
     print("Model 1 (Filter Layer) loaded successfully!")
 
 # Model 2: Classifying Relevant Images as Normal (0) or Tumorous Tissue (1)
 def get_model2():
     global model2
-    model2 = load_model('NASNet_2class_mid')
+    model2 = load_model('models/NASNet_2class_mid')
     print("Model 2 (Normal vs Tumorous tissue) loaded successfully!")
 
 # Model 3: Classifying Tumorous Images as Benign (0) or Malignant (1)
 def get_model3():
     global model3
-    model3 = load_model('NASNet_2class_low')
+    model3 = load_model('models/NASNet_2class_low')
     print("Model 3 (Benign vs Malignant) loaded successfully!")
 
 #Necessary image preprocessing function
@@ -68,7 +68,7 @@ def predict():
             response = {
             'irrelevant': prediction1_list,
             'tumorous': None,
-            'benOrMal': None
+            'malignant': None
         }
             return jsonify(response)
 # After an image is classified as Relevant (0) by the first model, Model 2 determines whether it is normal or tumorous.
@@ -82,7 +82,7 @@ def predict():
                 response = {
                 'irrelevant': prediction1_list,
                 'tumorous': prediction2_list,
-                'benOrMal': None
+                'malignant': None
             }
                 return jsonify(response)
 # The final layer analyzes images identified as tumorous by the previous model 
@@ -95,7 +95,7 @@ def predict():
                 response = {
                 'irrelevant': prediction1_list,
                 'tumorous': prediction2_list,
-                'benOrMal': prediction3_list
+                'malignant': prediction3_list
                 }
                 return jsonify(response)
 
