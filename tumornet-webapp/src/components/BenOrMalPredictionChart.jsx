@@ -20,14 +20,14 @@ ChartJS.register(
   Legend
 );
 
-const PredictionChart = ({ prediction }) => {
+const BenOrMalPredictionChart = ({ prediction }) => {
   let benign, malignant;
-  if (prediction[0] > 0.5) {
-    malignant = Math.floor((prediction[0] * 100))/100;
-    benign = Math.floor((1 - malignant)*100)/100;
+  if (prediction > 0.5) {
+    malignant = Math.floor((prediction * 100)) / 100;
+    benign = Math.floor((1 - malignant) * 100) / 100;
   } else {
-    benign = Math.floor(((1-prediction[0]) * 100))/100;
-    malignant = Math.floor((1 - benign)*100)/100;
+    benign = Math.floor(((1 - prediction) * 100)) / 100;
+    malignant = Math.floor((1 - benign) * 100) / 100;
   }
 
   const data = {
@@ -36,7 +36,7 @@ const PredictionChart = ({ prediction }) => {
       {
         label: 'Prediction',
         data: [benign, malignant],
-        backgroundColor: ['rgba(5, 172, 69, 0.95)', 'rgba(139, 0, 0, 0.95)'], 
+        backgroundColor: ['rgba(83, 157, 231, 0.95)', 'rgba(125, 0, 0, 0.95)'],
       },
     ],
   };
@@ -48,30 +48,30 @@ const PredictionChart = ({ prediction }) => {
         beginAtZero: true,
         max: 1,
         grid: {
-          color: '#e2e5ef', 
+          color: '#e2e5ef',
         },
         ticks: {
-          color: '#e2e5ef', 
+          color: '#e2e5ef',
           font: {
-            size: 16, 
+            size: 16,
           },
         },
       },
       y: {
         grid: {
-          color: '#e2e5ef', 
+          color: '#e2e5ef',
         },
         ticks: {
-          color: '#e2e5ef', 
+          color: '#e2e5ef',
           font: {
-            size: 16, 
+            size: 16,
           },
         },
       },
     },
     plugins: {
       legend: {
-        display: false, 
+        display: false,
       },
       tooltip: {
         enabled: true,
@@ -95,4 +95,4 @@ const PredictionChart = ({ prediction }) => {
   );
 };
 
-export default PredictionChart;
+export default BenOrMalPredictionChart;

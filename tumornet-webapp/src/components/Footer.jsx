@@ -7,8 +7,8 @@ export default function Footer() {
       <nav>
         <ul className="footer__links">
           <li><a href="/">Home</a></li>
-          <li><a href="https://polynoe.lib.uniwa.gr/xmlui/">Thesis Repository</a></li>
-          <li><a href="https://github.com/christopherkormpos">Docs</a></li>
+          <li><a href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/7182" target="_blank" rel="noreferrer">Thesis Repository</a></li>
+          <li><a href="https://github.com/christopherkormpos/TumorNet-thesis" target="_blank" rel="noreferrer">Docs</a></li>
           <li><a href="/app">App</a></li>
         </ul>
       </nav>

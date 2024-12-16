@@ -112,7 +112,47 @@ h3{
   opacity: 1;
   right: 0;
 }
+.irrelevant{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  animation: fade-in 1.5s ease-in-out;
+  margin-bottom: -40px;
+}
+.irrelevant h2{
+  font-size: 1.5em;
+  color: #f8f8ff;
+}
+.irrelevant .highlight-irr{
+  background-color: rgb(125, 0, 0);
+  color: #f8f8ff;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  animation: fadeInRight 4s;
+}
+.normal{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  animation: fade-in 1.5s ease-in-out;
+  margin-bottom: -40px;
+}
+.normal h2{
+  font-size: 1.5em;
+  color: #f8f8ff;
+}
+.normal .highlight-norm{
+  background-color: rgb(5, 172, 69);
+  color: #f8f8ff;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  animation: fadeInRight 4s;
+}
 .malignant{
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   animation: fade-in 1.5s ease-in-out;
   margin-bottom: -40px;
@@ -122,7 +162,7 @@ h3{
   color: #f8f8ff;
 }
 .malignant .highlight-mal{
-  background-color: #8b0000;
+  background-color: rgb(125, 0, 0);
   color: #f8f8ff;
   padding-left: 3px;
   padding-right: 3px;
@@ -130,6 +170,8 @@ h3{
   animation: fadeInRight 4s;
 }
 .benign{
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   animation: fade-in 1.5s ease-in-out;
   margin-bottom: -40px;
@@ -139,7 +181,7 @@ h3{
   color: #f8f8ff;
 }
 .benign .highlight-ben{
-  background-color: rgb(5, 172, 69);
+  background-color: rgb(83, 157, 231);
   color: #f8f8ff;
   padding-left: 3px;
   padding-right: 3px;
@@ -272,6 +314,18 @@ h3{
     margin-bottom: -10px;
     max-width: 350px;
     border-radius: 5px;
+  }
+  .irrelevant h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    margin-bottom: -60px;
+  }
+  .normal h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    margin-bottom: -60px;
   }
   .malignant h2{
     margin-left: 20px;

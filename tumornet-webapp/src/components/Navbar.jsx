@@ -11,7 +11,7 @@ export default function Navbar() {
             </div>
             <div className='nav-content'>
                 <a href="/" className='home'>Home</a>
-                <a href="https://github.com/christopherkormpos" className="docs" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/christopherkormpos/TumorNet-thesis" className="docs" target="_blank" rel="noopener noreferrer">
                     Documentation</a>
                 <a href="/app" className="app"><button className="btn">
   Application
