@@ -107,5 +107,12 @@ The frontend will be accessible at `localhost:3000`
 ## Aknowledments
 I would like to express my sincere gratitude to **Grigorios Koulouras** for his invaluable guidance, mentorship, and unwavering support as both my supervisor and co-writer of the paper; to PhD candidates **Fotios Zantalis** and **Stylianos Katsoulis** for their collaboration as co-writers, whose insightful contributions significantly enriched the research.
 
+## Contact
+If you encounter any issues or bugs with the application, or if you face difficulties while building the project locally, feel free to reach out to me:
+
+- **Email**: christopher.kormpos@gmail.com and ckormpos@uniwa.gr
+- **GitHub**: https://github.com/christopherkormpos
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/christopher-kormpos-27808b194/)
+
 ## License
-This project is licensed under the MIT License - see the [LICENSE] file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
