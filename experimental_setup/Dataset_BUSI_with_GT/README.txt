@@ -1,0 +1,1 @@
+The dataset can be downloaded from https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset. The folder will include three subfolders: 'benign,' 'malignant,' and 'normal.'
