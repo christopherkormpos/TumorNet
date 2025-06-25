@@ -82,7 +82,7 @@ Before cloning the GitHub repository, ensure that the following are installed on
 ### Step 1: Clone the Repository
 Clone the repository by running the following command:
 ```bash
-git clone https://github.com/christopherkormpos/TumorNet-thesis.git
+git clone https://github.com/christopherkormpos/TumorNet.git
 ```
 ### Step 2: Install Dependencies
 Navigate to the backend directory and install the required Python dependencies by executing:
